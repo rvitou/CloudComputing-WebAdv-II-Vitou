@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.main-content {
+    padding: 30px;
+    background-color: #f5f5f5;
+    min-height: calc(100vh - 70px);
+}
+
+.page-title {
+    font-weight: 600;
+}
+
+/* === STATS CARD STYLES UPDATED TO MATCH === */
+.stats-card {
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border: 2px solid #ff6b6b;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.stats-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.stats-label {
+    color: #666;
+    font-size: 1rem;
+}
+/* === END OF UPDATED STYLES === */
+
+
+.exercise-grid {
+    margin-top: 20px;
+}
+
+.exercise-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.exercise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.placeholder-image {
+    background: linear-gradient(135deg, #6c757d 0%, #343a40 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    height: 150px;
+}
+
+.exercise-info {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.exercise-category {
+    font-size: 0.8rem;
+    color: #6c757d;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.exercise-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 8px;
+}
+
+.exercise-coach {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.exercise-actions {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.action-btn {
+    background: transparent;
+    border: none;
+    color: #6c757d;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.2s ease;
+}
+
+.action-btn.btn-view:hover {
+    color: #0d6efd;
+}
+
+.action-btn.btn-delete:hover {
+    color: #dc3545;
+}

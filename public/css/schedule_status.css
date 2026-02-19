@@ -1,0 +1,24 @@
+/* Add or adjust these styles in students.css if they are not already there */
+        .status-badge {
+            padding: 0.3em 0.6em;
+            border-radius: 0.25rem;
+            font-size: 0.8em;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        .status-scheduled {
+            background-color: #0d6efd; /* Bootstrap primary blue */
+            color: #fff;
+        }
+        .status-ongoing {
+            background-color: #ffc107; /* Bootstrap warning yellow */
+            color: #212529;
+        }
+        .status-completed {
+            background-color: #198754; /* Bootstrap success green */
+            color: #fff;
+        }
+        .status-cancelled {
+            background-color: #dc3545; /* Bootstrap danger red */
+            color: #fff;
+        }

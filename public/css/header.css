@@ -1,0 +1,47 @@
+/* Header */
+.header {
+    background: linear-gradient(135deg, #333, #555);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex; /* Ensure flex for content alignment within container */
+    align-items: center;
+}
+
+.header .container-fluid {
+    display: flex;
+    align-items: center;
+    /* You might want to add justify-content here if you have other elements in the header */
+}
+
+.brand-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit;        /* Makes the text use the parent's color (white) */
+    transition: opacity 0.2s ease;
+    display: flex; /* Ensure the link itself is a flex container for alignment */
+    align-items: center;
+}
+
+.brand-link:hover {
+    color: inherit;        /* Keeps the text color white on hover */
+    opacity: 0.8;          /* Adds a nice, subtle dimming effect on hover */
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Styling for the new image logo */
+.brand-logo-img {
+    width: 40px; /* Slightly larger size for the image */
+    height: 40px;
+    border-radius: 50%; /* Makes the image perfectly round */
+    margin-right: 12px; /* A bit more space between image and text */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Subtle white border */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Small shadow for depth */
+}
+
